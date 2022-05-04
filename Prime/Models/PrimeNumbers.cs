@@ -6,7 +6,7 @@ namespace Prime.Models
   public class PrimeN
   {
     public bool[] BoolArray { get; }
-
+    public List<int>[] PrimeCount { get; }
     public PrimeN(int num)
     {
       BoolArray = new bool[num+1];
@@ -26,8 +26,8 @@ namespace Prime.Models
         }
       }
         
-      for(int index = 2; index < BoolArray.Length; index++)
-        Console.WriteLine($"{index}: {BoolArray[index]}"); //want to see what is in BoolArray
+      // for(int index = 2; index < BoolArray.Length; index++)
+      //   Console.WriteLine($"{index}: {BoolArray[index]}"); //want to see what is in BoolArray
       }
     }
   }

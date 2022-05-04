@@ -1,22 +1,30 @@
 using System;
 using Prime.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Program
 {
-    public static void Main()
+  public static void Main()
+  {
+    Console.WriteLine("Type a number: ");
+    int userNumber = int.Parse(Console.ReadLine()); 
+    PrimeN userNumberPrimes = new PrimeN(userNumber); 
+    userNumberPrimes.TruePrime(); 
+    List<int> array = new List<int>();
+
+    for (int index = 2; index < userNumberPrimes.BoolArray.Length-1; index++) 
     {
-      Console.WriteLine("Type a number: ");
-      int userNumber = int.Parse(Console.ReadLine()); //number = 5
-      PrimeN userNumberPrimes = new PrimeN(userNumber); //number = 5
-      userNumberPrimes.TruePrime(); //calling TruePrime function with a l
-      for (int index = 2; index < userNumberPrimes.BoolArray.Length-1; index++) 
+    if(userNumberPrimes.BoolArray[index])
     {
-      if(userNumberPrimes.BoolArray[index])
-      {
-        Console.WriteLine(index);
+      Console.WriteLine(index);
+      if (userNumberPrimes.BoolArray[index] == true){
+        array.Add(index);
       }
     }
-  }
+    }
+    
+  Console.WriteLine(array.Count());
 }
 
 
