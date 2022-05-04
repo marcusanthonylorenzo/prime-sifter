@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6zh/nwsdT/Kk1sJQVbZU80uTwz7S6051oSb/pruiB+mHS68iZkCkWUlPvgAV/TzRw4h/4jxY9SCLRKd+IVRKHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marcus\\Desktop\\C#\\PrimeSifting.Solution\\Prime\\PrimeNumbers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marcus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
